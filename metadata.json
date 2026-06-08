@@ -1,0 +1,6 @@
+{
+  "name": "AI Commerce OS",
+  "description": "A high-fidelity simulator of a multi-agent AI and Shopify-level SaaS storefront platform. Features industry template engines, visual workflow automation, real-time agent collaboration led by AI CEO, and live Gemini interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

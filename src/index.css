@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom enterprise brand colors mapping */
+  --color-indigo-50: #e6fafc;
+  --color-indigo-100: #bef1fa;
+  --color-indigo-200: #8ce4f5;
+  --color-indigo-300: #5ad6ee;
+  --color-indigo-400: #2bc9e9;
+  --color-indigo-500: #07c2e3; /* Brand Primary */
+  --color-indigo-600: #06b2d0; /* Brand Hover */
+  --color-indigo-700: #059bbc; /* Brand Active */
+  --color-indigo-800: #0488a5;
+  --color-indigo-900: #036b81;
+  --color-indigo-950: #013745;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.4);
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.1; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+.pulse-active {
+  animation: pulse-ring 2s infinite ease-in-out;
+}
+
